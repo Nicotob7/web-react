@@ -1,5 +1,4 @@
-export {default as Article} from './article/Article';
-export {default as Brand} from './brand/Brand';
-export {default as CTA} from './cta/CTA';
-export {default as Feature} from './feature/Feature';
+//Aqui se extraen todos los export de los componentes para poder importarlos en App.js
+
+export {default as Carrusel} from './carrusel/Carrusel';
 export {default as Navbar} from './navbar/Navbar';

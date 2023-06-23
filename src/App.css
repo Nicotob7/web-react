@@ -1,7 +1,7 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
@@ -15,7 +15,20 @@ a {
 }
 
 .gradient__bg {
-    background: linear-gradient( 90deg, rgba(21,67,139,1) 0%, rgba(139,38,127,1) 100%);
+    /* ff 3.6+ */
+    background: -moz-radial-gradient(circle at 3% 25%, rgba(21, 67, 139, 1) 0%, rgba(139, 38, 127, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-radial-gradient(circle at 3% 25%, rgba(21, 67, 139, 1) 0%, rgba(139, 38, 127, 1) 100%);
+
+    /* opera 11.10+ */
+    background: -o-radial-gradient(circle at 3% 25%, rgba(21, 67, 139, 1) 0%, rgba(139, 38, 127, 1) 100%);
+
+    /* ie 10+ */
+    background: -ms-radial-gradient(circle at 3% 25%, rgba(21, 67, 139, 1) 0%, rgba(139, 38, 127, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background: radial-gradient(circle at 3% 25%, rgba(21, 67, 139, 1) 0%, rgba(139, 38, 127, 1) 100%);
 }
 
 .gradient__text {
@@ -27,7 +40,7 @@ a {
 }
 
 .section__padding {
-    padding: 4rem 6rem;
+    padding: 4rem 0rem;
 }
 
 .section__margin {
