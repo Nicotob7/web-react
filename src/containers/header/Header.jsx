@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import React from 'react';
 import './header.css';
 
 //Cuerpo de las cards (si llegamos a poner imagenes deberiamos hacer un const para las imagenes?)
@@ -22,33 +21,11 @@ const Menu = () => (
 );
 
 const Header = () => {
-  const [toggleMenu, setToggleMenu] = useState(false);
-
-  const handleMenuToggle = () => {
-    setToggleMenu(!toggleMenu);
-  };
 
   return (
     <div className="muni_header">
       <Menu />
-
       <div className="muni_card_text_start">
-        {toggleMenu ? (
-          <RiCloseLine color="#fff" size={27} onClick={handleMenuToggle} />
-        ) : (
-          <RiMenu3Line color="#fff" size={27} onClick={handleMenuToggle} />
-        )}
-        {toggleMenu && (
-          <div className="muni__navbar-menu_container scale-up-center">
-            <div className="muni__navbar-menu_container-links">
-              <Menu />
-              <div className="muni__navbar-menu_container-links-sign">
-                <p>aca</p>
-                <button type="button">Registrate</button>
-              </div>
-            </div>
-          </div>
-        )}
       </div>
     </div>
   );
