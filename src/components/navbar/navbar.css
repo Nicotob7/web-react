@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
 
-    padding: 2rem 6rem;
+    padding: 1rem 2rem;
 }
 
 /*Muestra los link en la barra*/
@@ -16,13 +16,16 @@
 
 /*Espacio entre logo e items*/
 .muni__navbar-links_logo {
-    margin-right: 3rem;
+    margin-right: 1rem;
 }
 
 /*Tamaño img*/
 .muni__navbar-links_logo img {
-    width: 62px;
-    height: 16px;
+    width: 270px;
+    height: 50px;
+    margin-right: 1rem;
+    position: relative;
+    right: 1.1rem;
 }
 
 /*Menu desplegable (fila)*/
@@ -44,7 +47,7 @@
     color: var(--color-text);
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 25px;
     text-transform: capitalize;
 
@@ -144,4 +147,12 @@
     .muni__navbar-menu_container-links-sign {
         display: block;
     }
+}
+
+/* el separador es la linea blanca que separa el logo de los items*/
+.separador{
+    color: azure;
+    position:relative;
+    font-size: 3rem;
+    right: 81%;
 }
