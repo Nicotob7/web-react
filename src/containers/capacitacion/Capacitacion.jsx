@@ -16,6 +16,16 @@ const Card = () => (
           controls
         />
       </div>
+
+      <div className='player-wrapper'>
+        <ReactPlayer
+          className='react-player'
+          url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          width='100%'
+          height='100%'
+          controls
+        />
+      </div>
       
   </>
 );
@@ -23,7 +33,7 @@ const Card = () => (
 const Capacitacion = () => {
   return (
     <div className="container">
-      <div className="video-container">
+      <div className="video_container">
         <Card/>
       </div>
     </div>
