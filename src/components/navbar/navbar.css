@@ -150,9 +150,16 @@
 }
 
 /* el separador es la linea blanca que separa el logo de los items*/
-.separador{
+.separador2{
     color: azure;
-    position:relative;
-    font-size: 3rem;
-    right: 81%;
+    font-size: 2rem;
+    position:block;
+    
+}
+
+.separador1{
+    color: azure;
+    font-size: 2rem;
+    position:static;
+    
 }

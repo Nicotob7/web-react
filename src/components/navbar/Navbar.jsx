@@ -16,6 +16,7 @@ const Menu = () => (
   </>
 );
 
+
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
@@ -24,24 +25,27 @@ const Navbar = () => {
   };
 
   return (
+
     <div className='muni__navbar'>
       <div className='muni__navbar-links'>
         <div className='muni__navbar-links_logo'>
           <img src={logo} alt="logo" />
         </div>
+        <div className="separador1">
+        <p>|</p>
+        </div>
         <div className='muni__navbar-links_container'>
           <Menu />
         </div>
       </div>
-
+      <div className="separador2">
+        <p>|</p>
+      </div>
       <div className='muni__navbar-sign'>
         <p>iniciar sesión</p>
         <button type='button'>Registrate</button>
       </div>
 
-      <div className="separador">
-        <p>|</p>
-      </div>
 
       <div className='muni__navbar-menu'>
         {toggleMenu ? (

@@ -4,6 +4,7 @@
   justify-content: center;
 }
 
+
 /*Estilos para el slider*/
 .slider {
   margin: 0 auto;
@@ -36,5 +37,9 @@
     font-family: var(--font-family);
     cursor: pointer;
     width: 100vw;
+  }
+
+  .separador {
+    left:200%;
   }
 }
