@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
 
-    padding: 1rem 2rem;
+    padding:1rem 2rem;
 }
 
 /*Muestra los link en la barra*/
@@ -17,15 +17,14 @@
 /*Espacio entre logo e items*/
 .muni__navbar-links_logo {
     margin-right: 1rem;
+
 }
 
 /*Tamaño img*/
 .muni__navbar-links_logo img {
-    width: 270px;
-    height: 50px;
-    margin-right: 1rem;
-    position: relative;
-    right: 1.1rem;
+    height: 90px;
+    position:block;
+    right: 1.0rem;
 }
 
 /*Menu desplegable (fila)*/
