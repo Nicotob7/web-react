@@ -8,11 +8,10 @@ import logo from '../../assets/logo1.png';
 //Aqui estan los botones home, etc
 const Menu = () => (
   <>
-    <p><a href='#home'>INICIO</a></p>
-    <p><a href='#home'>AYUDA</a></p>
-    <p><a href='#home'>BENEFICIOS</a></p>
-    <p><a href='#home'>PREGUNTAS</a></p>
-    <p><a href='#home'>SOBRE NOSOTROS</a></p>
+    <p><a href='#home'>Inicio</a></p>
+    <p><a href='#home'>Ayuda</a></p>
+    <p><a href='#home'>Beneficio</a></p>
+    <p><a href='#home'>Preguntas</a></p>
   </>
 );
 
@@ -31,16 +30,20 @@ const Navbar = () => {
         <div className='muni__navbar-links_logo'>
           <img src={logo} alt="logo" />
         </div>
+
         <div className="separador1">
         <p>|</p>
         </div>
+        
         <div className='muni__navbar-links_container'>
           <Menu />
         </div>
       </div>
+
       <div className="separador2">
         <p>|</p>
       </div>
+
       <div className='muni__navbar-sign'>
         <p>iniciar sesión</p>
         <button type='button'>Registrate</button>

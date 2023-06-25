@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
 
-    padding:1rem 2rem;
+    padding: 1rem 2rem;
 }
 
 /*Muestra los link en la barra*/
@@ -22,9 +22,11 @@
 
 /*Tamaño img*/
 .muni__navbar-links_logo img {
-    height: 90px;
-    position:block;
-    right: 1.0rem;
+    width: 270px;
+    height: 50px;
+    margin-right: 1rem;
+    position: relative;
+    right: 1.1rem;
 }
 
 /*Menu desplegable (fila)*/
@@ -121,16 +123,24 @@
     .muni__navbar-menu {
         display: flex;
     }
+
+    .separador1{
+        display: none;
+    }
+
+    .separador2{
+        display: none;
+    }
 }
 /* */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 940px) {
     .muni__navbar {
         padding: 2rem 4rem;
     }
 }
 
 /*Desactiva el login de la barra pero lo activa en menu desplegable*/
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 640px) {
     .muni__navbar {
         padding: 2rem;
     }
