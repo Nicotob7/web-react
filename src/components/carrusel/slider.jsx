@@ -7,6 +7,10 @@ const Slider = ({ images, interval = 3000 }) => {
     setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
   }, [images]);
 
+  const goToPreviousSlide = useCallback(() => {
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
+  }, [images]);
+
   useEffect(() => {
     const slideTimer = setTimeout(() => {
       goToNextSlide();
@@ -19,7 +23,13 @@ const Slider = ({ images, interval = 3000 }) => {
 
   return (
     <div className="slider">
-      <img src={images[currentIndex]} alt="" />
+      <div className="slider-image">
+      <div className="slider-controls">
+        <button onClick={goToPreviousSlide}>&#x2039;</button>
+        <button onClick={goToNextSlide}>&#x203A;</button>
+      </div>
+        <img src={images[currentIndex]} alt="" />
+      </div>
     </div>
   );
 };

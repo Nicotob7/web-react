@@ -28,7 +28,9 @@ const Navbar = () => {
     <div className='muni__navbar'>
       <div className='muni__navbar-links'>
         <div className='muni__navbar-links_logo'>
+          <a href='#home'>
           <img src={logo} alt="logo" />
+          </a>
         </div>
 
         <div className="separador1">

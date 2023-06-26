@@ -17,6 +17,7 @@
 /*Espacio entre logo e items*/
 .muni__navbar-links_logo {
     margin-right: 1rem;
+    cursor: pointer;
 
 }
 

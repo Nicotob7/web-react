@@ -1,7 +1,9 @@
 import React from "react";
 import {Footer, Footer2, Features, Header, Capacitacion} from "./containers";
 import {Carrusel , Navbar} from "./components";
+import {Bot} from './chatbot/index';
 import "./App.css";
+
 
 const App = () => {
     return (
@@ -14,6 +16,7 @@ const App = () => {
             <Header />
             <Capacitacion />
             <Features />
+            <Bot />
             <Footer2 />
             <Footer />
         </div> 

@@ -1,0 +1,22 @@
+.bot-container {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+}
+
+.toggle_button {
+    position: fixed;
+    right: 20px;
+    background-color: #8ed1fc;
+    color: rgba(21, 67, 139, 1);
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.chat-container {
+    position: relative;
+    padding: 2px;
+}

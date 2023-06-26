@@ -1,22 +1,25 @@
+/**/
 .video_container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-auto-flow: row;
 }
 
+/*Aqui se edita el container de los videos*/
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
 }
 
 .player-wrapper {
-    width: 100% ;
-    cursor: pointer;
-    padding: 0.5rem 1rem;
+  width: 100% ;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
 }
 
+/*Para que se adapte a las pantallas de celu*/
 @media (max-width: 600px) {
     .player-wrapper {
       width: 100%;
