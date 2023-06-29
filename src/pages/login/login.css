@@ -1,0 +1,64 @@
+.card_login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 185px 0;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/64/Plaza_Cruz.JPG");
+  background-size: 100%;
+  font-family: var(--font-family);
+}
+
+.card-content {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;   
+}
+
+form.login {
+  margin-top: 20px;
+}
+
+form.login.user {
+  background-color: #fff;
+}
+
+/*Admin color*/
+form.login.admin {
+  background-color: #ffffff;
+}
+
+form.login label {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+form.login input[type="email"],
+form.login input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(139, 38, 127, 1);
+  border-radius: 50px;
+}
+
+/*Boton de login (Inicio secion)*/
+form.login button[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button {
+  margin-top: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}

@@ -2,9 +2,6 @@ import React from 'react';
 import ReactPlayer from 'react-player';
 import './capacitacion.css';
 
-//Este documento es para la pagina de capacitacion, aqui se encuentra los video,
-//ya es responsive se puede visualizar en cualquier dispositivo pero en la vista pc se ve peor, no se si se puede mejorar eso
-
 const Card = ({ url }) => (
   <div className='player-wrapper'>
     <ReactPlayer
@@ -17,16 +14,21 @@ const Card = ({ url }) => (
   </div>
 );
 
-//Aqui se encuentra los links de los videos, se puede agregar mas videos
 const urls = [
-  'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-  'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-  'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+  'https://www.youtube.com/watch?v=zbpcEczYELs',
+  'https://www.youtube.com/watch?v=fKMUFr6l6to',
+  'https://www.youtube.com/watch?v=qBy7Kz1hSUc',
+  'https://www.youtube.com/watch?v=zbpcEczYELs',
+  'https://www.youtube.com/watch?v=fKMUFr6l6to',
+  'https://www.youtube.com/watch?v=qBy7Kz1hSUc',
+  'https://www.youtube.com/watch?v=fKMUFr6l6to',
+  'https://www.youtube.com/watch?v=qBy7Kz1hSUc',
 ];
 
 const Capacitacion = () => {
   return (
     <div className="container">
+      <h2>Capacitación</h2> {/* Título general */}
       <div className="video_container">
         {urls.map((url) => (
           <Card url={url} />

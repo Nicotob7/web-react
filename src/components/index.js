@@ -2,3 +2,4 @@
 
 export {default as Carrusel} from './carrusel/Carrusel';
 export {default as Navbar} from './navbar/Navbar';
+export {default as Login} from '../pages/login/Loginn';

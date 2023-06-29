@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 
-const Slider = ({ images, interval = 3000 }) => {
+const Slider = ({ images, interval = 7000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToNextSlide = useCallback(() => {

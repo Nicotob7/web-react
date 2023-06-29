@@ -2,18 +2,20 @@ import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import './navbar.css';
 import logo from '../../assets/logo1.png';
+import { useNavigate, Link } from 'react-router-dom';
 
 //Este codigo se basa mas en el css por si lo revisa alguien igual deje todo comentado ahi en el navbar.css
 
 //Aqui estan los botones home, etc
 const Menu = () => (
   <>
-    <p><a href='#home'>Inicio</a></p>
-    <p><a href='#home'>Ayuda</a></p>
-    <p><a href='#home'>Beneficio</a></p>
-    <p><a href='#home'>Preguntas</a></p>
+    <p><Link to="/">Inicio</Link></p>
+    <p><Link to="/ayuda">Ayuda</Link></p>
+    <p><Link to="/beneficio">Beneficio</Link></p>
+    <p><Link to="/preguntas">Preguntas</Link></p>
   </>
 );
+
 
 
 const Navbar = () => {
@@ -23,13 +25,26 @@ const Navbar = () => {
     setToggleMenu(!toggleMenu);
   };
 
+  const navigate = useNavigate();
+
+  const Click = () => {
+    navigate('/login');
+  };
+
+  const Clock = () => {
+    navigate('/register');
+  };
+
   return (
+    
 
     <div className='muni__navbar'>
       <div className='muni__navbar-links'>
         <div className='muni__navbar-links_logo'>
-          <a href='#home'>
-          <img src={logo} alt="logo" />
+          <a>
+            <Link to="/">
+              <img src={logo} alt="logo" />
+            </Link>
           </a>
         </div>
 
@@ -47,8 +62,8 @@ const Navbar = () => {
       </div>
 
       <div className='muni__navbar-sign'>
-        <p>iniciar sesión</p>
-        <button type='button'>Registrate</button>
+        <p onClick={Click}>iniciar sesión</p>
+        <button onClick={Clock} type='button'>Registrate</button>
       </div>
 
 
@@ -63,8 +78,8 @@ const Navbar = () => {
             <div className='muni__navbar-menu_container-links'>
               <Menu />
               <div className='muni__navbar-menu_container-links-sign'>
-                <p>iniciar sesión</p>
-                <button type='button'>Registrate</button>
+              <p onClick={Click}>iniciar sesión</p>
+                <button onClick={Clock} type='button'>Registrate</button>
               </div>
             </div>
           </div>

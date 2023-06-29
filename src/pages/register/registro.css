@@ -1,0 +1,57 @@
+.card_register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Quilicura_y_cerro_Renca.jpg/1200px-Quilicura_y_cerro_Renca.jpg");
+  background-size: 100%;
+  font-family: var(--font-family);
+}
+
+.card-content {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+form.register {
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+form.register label {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+form.register input[type="text"],
+form.register input[type="number"],
+form.register input[type="email"],
+form.register input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(139, 38, 127, 1);
+  border-radius: 50px;
+}
+
+form.register button[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button {
+  margin-top: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
